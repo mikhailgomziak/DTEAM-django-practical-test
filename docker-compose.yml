@@ -17,12 +17,13 @@ services:
     command: ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
     volumes:
       - .:/app
-    ports:
-      - "8000:8000"
     depends_on:
       - db
     networks:
       - backend
+    ports:
+      - "8000:8000"
+
 
   celery:
     build: .
@@ -35,7 +36,7 @@ services:
       - db
       - redis
     networks:
-    - backend
+      - backend
 
   redis:
     image: redis:7

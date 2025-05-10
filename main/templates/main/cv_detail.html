@@ -49,6 +49,35 @@
             </ul>
 
             <a href="{% url 'cv-pdf' cv.pk %}" class="btn btn-primary mt-3">Download PDF</a>
+
+            <form method="post" action="{% url 'send-cv-pdf' cv.id %}">
+                {% csrf_token %}
+                <input type="email" name="email" placeholder="Enter recipient email" required>
+                <button type="submit">Send PDF to Email</button>
+            </form>
+
+            <p id="responseMessage"></p>
+
+            <script>
+                document.getElementById('sendPdfForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    var formData = new FormData(this);
+                    var email = formData.get('email');
+
+                    fetch("{% url 'send-cv-pdf' cv.id %}", {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('responseMessage').textContent = data.message;
+                    })
+                    .catch(error => {
+                        document.getElementById('responseMessage').textContent = 'An error occurred: ' + error;
+                    });
+                });
+            </script>
         </div>
     </div>
 </div>
