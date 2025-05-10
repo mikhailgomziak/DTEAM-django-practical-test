@@ -43,6 +43,8 @@
                 <li>{{ contact.type }}: {{ contact.value }}</li>
                 {% endfor %}
             </ul>
+
+            <a href="{% url 'cv-pdf' cv.pk %}" class="btn btn-primary mt-3">Download PDF</a>
         </div>
     </div>
     {% empty %}
