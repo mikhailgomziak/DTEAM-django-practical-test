@@ -68,6 +68,13 @@ Load initial data:
 python manage.py loaddata sample_cv.json
 ```
 
+## 🧪 Running Tests
+
+To run unit tests for the CV list and detail views:
+
+```bash
+python manage.py test
+```
 
 # Instructions
 # Version Control System 
