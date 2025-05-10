@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Settings</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Project Settings</h1>
+    <table>
+        <tr>
+            <th>Setting</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>DEBUG</td>
+            <td>{{ debug }}</td>
+        </tr>
+        <tr>
+            <td>PROJECT_NAME</td>
+            <td>{{ project_name }}</td>
+        </tr>
+    </table>
+    <table>
+        <thead><tr><th>DB Alias</th><th>DB Engine</th></tr></thead>
+        <tbody>
+            {% for alias, db in databases.items %}
+            <tr>
+                <td>{{ alias }}</td>
+                <td>{{ db.ENGINE }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
