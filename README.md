@@ -68,12 +68,32 @@ Load initial data:
 python manage.py loaddata sample_cv.json
 ```
 
-## 🧪 Running Tests
+### 🧪 Running Tests
 
 To run unit tests for the CV list and detail views:
 
 ```bash
 python manage.py test
+```
+
+## Docker
+
+Set up environment variables:
+
+Create a .env file in the root of the project directory. Ensure the necessary environment variables are defined.
+
+Example .env:
+```bash
+POSTGRES_DB=mydb # The name of your database.
+POSTGRES_USER=myuser # The PostgreSQL username.
+POSTGRES_PASSWORD=mypassword # The PostgreSQL password.
+POSTGRES_HOST=localhost # change to localhost if you run project locally and db if via docker
+POSTGRES_PORT=5432 # The port for the db.
+```
+
+Use command:
+```bash
+docker-compose up --build
 ```
 
 # Instructions
