@@ -1,0 +1,209 @@
+[
+  {
+    "model": "main.cv",
+    "pk": 1,
+    "fields": {
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "bio": "Full-stack developer with experience in Django and React."
+    }
+  },
+  {
+    "model": "main.skill",
+    "pk": 1,
+    "fields": {
+      "cv": 1,
+      "name": "Python",
+      "level": "expert"
+    }
+  },
+  {
+    "model": "main.skill",
+    "pk": 2,
+    "fields": {
+      "cv": 1,
+      "name": "JavaScript",
+      "level": "advanced"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 1,
+    "fields": {
+      "cv": 1,
+      "title": "Portfolio Website",
+      "description": "Personal website built with Django.",
+      "link": "https://janedoe.dev"
+    }
+  },
+  {
+    "model": "main.contact",
+    "pk": 1,
+    "fields": {
+      "cv": 1,
+      "type": "email",
+      "value": "jane.doe@example.com"
+    }
+  },
+  {
+    "model": "main.contact",
+    "pk": 2,
+    "fields": {
+      "cv": 1,
+      "type": "github",
+      "value": "https://github.com/janedoe"
+    }
+  },
+
+  {
+    "model": "main.cv",
+    "pk": 2,
+    "fields": {
+      "firstname": "John",
+      "lastname": "Smith",
+      "bio": "Backend engineer passionate about scalable APIs."
+    }
+  },
+  {
+    "model": "main.skill",
+    "pk": 3,
+    "fields": {
+      "cv": 2,
+      "name": "Go",
+      "level": "advanced"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 2,
+    "fields": {
+      "cv": 2,
+      "title": "API Gateway",
+      "description": "A microservice gateway written in Go.",
+      "link": ""
+    }
+  },
+  {
+    "model": "main.contact",
+    "pk": 3,
+    "fields": {
+      "cv": 2,
+      "type": "email",
+      "value": "john.smith@example.com"
+    }
+  },
+
+  {
+    "model": "main.cv",
+    "pk": 3,
+    "fields": {
+      "firstname": "Alice",
+      "lastname": "Johnson",
+      "bio": "UX/UI designer with 5+ years of experience."
+    }
+  },
+  {
+    "model": "main.skill",
+    "pk": 4,
+    "fields": {
+      "cv": 3,
+      "name": "Figma",
+      "level": "expert"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 3,
+    "fields": {
+      "cv": 3,
+      "title": "Design System",
+      "description": "Created a reusable design system for a SaaS platform.",
+      "link": ""
+    }
+  },
+  {
+    "model": "main.contact",
+    "pk": 4,
+    "fields": {
+      "cv": 3,
+      "type": "linkedin",
+      "value": "https://linkedin.com/in/alicejohnson"
+    }
+  },
+
+  {
+    "model": "main.cv",
+    "pk": 4,
+    "fields": {
+      "firstname": "Bob",
+      "lastname": "Lee",
+      "bio": "Frontend engineer with a focus on performance."
+    }
+  },
+  {
+    "model": "main.skill",
+    "pk": 5,
+    "fields": {
+      "cv": 4,
+      "name": "Vue.js",
+      "level": "advanced"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 4,
+    "fields": {
+      "cv": 4,
+      "title": "Real-time Dashboard",
+      "description": "Built a dashboard using Vue and WebSockets.",
+      "link": "https://boblee.dev/dashboard"
+    }
+  },
+  {
+    "model": "main.contact",
+    "pk": 5,
+    "fields": {
+      "cv": 4,
+      "type": "github",
+      "value": "https://github.com/boblee"
+    }
+  },
+
+  {
+    "model": "main.cv",
+    "pk": 5,
+    "fields": {
+      "firstname": "Sara",
+      "lastname": "Khan",
+      "bio": "Data scientist with expertise in machine learning and NLP."
+    }
+  },
+  {
+    "model": "main.skill",
+    "pk": 6,
+    "fields": {
+      "cv": 5,
+      "name": "TensorFlow",
+      "level": "expert"
+    }
+  },
+  {
+    "model": "main.project",
+    "pk": 5,
+    "fields": {
+      "cv": 5,
+      "title": "Chatbot",
+      "description": "Developed an NLP-powered customer support chatbot.",
+      "link": ""
+    }
+  },
+  {
+    "model": "main.contact",
+    "pk": 6,
+    "fields": {
+      "cv": 5,
+      "type": "email",
+      "value": "sara.khan@example.com"
+    }
+  }
+]
