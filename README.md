@@ -20,7 +20,7 @@ Make sure you have the following installed:
 
 ---
 
-### 1. Install pyenv and pyenv-virtualenv
+### Install pyenv and pyenv-virtualenv
 
 #### Using Homebrew (macOS):
 ```bash
@@ -47,12 +47,27 @@ pyenv virtualenv 3.12.9 dteam-pt
 pyenv activate dteam-pt
 ```
 
-### 2. Install poetry and install dependencies:
+### Install poetry and install dependencies:
 #### Using Homebrew (macOS):
 ```bash
 brew install poetry
 poetry install
 ```
+
+### 📥 Make migrations and load initial data
+
+To load the sample CV data into your database:
+
+Apply migrations:
+```bash
+python manage.py migrate
+```
+
+Load initial data:
+```bash
+python manage.py loaddata sample_cv.json
+```
+
 
 # Instructions
 # Version Control System 

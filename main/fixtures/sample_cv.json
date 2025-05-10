@@ -1,0 +1,58 @@
+[
+    {
+      "model": "main.cv",
+      "pk": 1,
+      "fields": {
+        "firstname": "Jane",
+        "lastname": "Doe",
+        "bio": "Full-stack developer with experience in Django and React."
+      }
+    },
+    {
+      "model": "main.skill",
+      "pk": 1,
+      "fields": {
+        "cv": 1,
+        "name": "Python",
+        "level": "expert"
+      }
+    },
+    {
+      "model": "main.skill",
+      "pk": 2,
+      "fields": {
+        "cv": 1,
+        "name": "JavaScript",
+        "level": "advanced"
+      }
+    },
+    {
+      "model": "main.project",
+      "pk": 1,
+      "fields": {
+        "cv": 1,
+        "title": "Portfolio Website",
+        "description": "Personal website built with Django.",
+        "link": "https://janedoe.dev"
+      }
+    },
+    {
+      "model": "main.contact",
+      "pk": 1,
+      "fields": {
+        "cv": 1,
+        "type": "email",
+        "value": "jane.doe@example.com"
+      }
+    },
+    {
+      "model": "main.contact",
+      "pk": 2,
+      "fields": {
+        "cv": 1,
+        "type": "github",
+        "value": "https://github.com/janedoe"
+      }
+    }
+  ]
+  
