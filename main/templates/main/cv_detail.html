@@ -47,6 +47,8 @@
                 <li>No contact info listed.</li>
                 {% endfor %}
             </ul>
+
+            <a href="{% url 'cv-pdf' cv.pk %}" class="btn btn-primary mt-3">Download PDF</a>
         </div>
     </div>
 </div>
