@@ -1,4 +1,60 @@
 # DTEAM-django-practical-test
+
+This project uses:
+
+- [**pyenv**](https://github.com/pyenv/pyenv): to manage multiple Python versions
+- [**pyenv-virtualenv**](https://github.com/pyenv/pyenv-virtualenv): for Python virtual environments
+- [**Poetry**](https://python-poetry.org/): for dependency and packaging management
+
+---
+
+## 📋 Prerequisites
+
+Make sure you have the following installed:
+
+- Git
+- build tools (`build-essential`, `make`, `gcc`, etc.)
+- `pyenv` and `pyenv-virtualenv`
+- Python 3.12.9 (or the required version)
+- Poetry
+
+---
+
+### 1. Install pyenv and pyenv-virtualenv
+
+#### Using Homebrew (macOS):
+```bash
+brew install pyenv pyenv-virtualenv
+```
+
+#### Add pyenv to your shell:
+```bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+#### Install python 3.12.9 and activate it:
+```bash
+pyenv install 3.12.9
+pyenv local 3.12.9
+pyenv shell 3.12.9
+```
+
+#### Create virtualenv and use it:
+```bash
+pyenv virtualenv 3.12.9 dteam-pt
+pyenv activate dteam-pt
+```
+
+### 2. Install poetry and install dependencies:
+#### Using Homebrew (macOS):
+```bash
+brew install poetry
+poetry install
+```
+
+# Instructions
 # Version Control System 
 1. Create a public GitHub repository for this practical test, for example: DTEAM-django- 
 practical-test. 
