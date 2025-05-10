@@ -17,12 +17,34 @@ services:
     command: ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
     volumes:
       - .:/app
-    ports:
-      - "8000:8000"
     depends_on:
       - db
     networks:
       - backend
+    ports:
+      - "8000:8000"
+
+
+  celery:
+    build: .
+    command: poetry run celery -A CVProject worker --loglevel=info
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
+    networks:
+      - backend
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    networks:
+      - backend
+
 
 networks:
   backend:

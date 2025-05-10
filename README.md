@@ -96,6 +96,18 @@ Use command:
 docker-compose up --build
 ```
 
+## SMTP setup
+I used gmail smtp server to send emails.
+
+To send email with a CV pdf you need to set the next info in .env:
+
+```bash
+EMAIL_HOST_USER=youremail@gmail.com
+EMAIL_HOST_PASSWORD=your app password - 16 digits without space
+```
+
+I left those in .env.example
+
 # Instructions
 # Version Control System 
 1. Create a public GitHub repository for this practical test, for example: DTEAM-django- 

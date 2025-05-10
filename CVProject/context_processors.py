@@ -13,5 +13,9 @@ def settings_context(request):
         'project_name': getattr(settings, 'PROJECT_NAME', 'My Site'),
         'language_code': getattr(settings, 'LANGUAGE_CODE', 'en-use'),
         'time_zone': getattr(settings, 'TIME_ZONE', 'UTC'),
+        'use_ssl': settings.EMAIL_USE_SSL,
+        'use_tls': settings.EMAIL_USE_TLS,
+        'email_backend': settings.EMAIL_BACKEND,
+        'email_host': settings.EMAIL_HOST,
         'databases': databases
     }
