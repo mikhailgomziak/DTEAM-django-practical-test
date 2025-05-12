@@ -11,7 +11,7 @@ def send_cv_pdf_email(cv_id, email):
     
     from django.conf import settings
     print(settings.EMAIL_HOST_PASSWORD)
-    html_string = render_to_string("main/cv_detail.html", {"cv": cv})
+    html_string = render_to_string("main/cv_detail_mail.html", {"cv": cv})
 
     pdf_file = BytesIO()
     HTML(string=html_string).write_pdf(pdf_file)
