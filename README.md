@@ -1,5 +1,10 @@
 # DTEAM-django-practical-test
 
+Endpoints:
+- /logs - shows you 10 most recent requests
+- /settings - show your some settings from settings.py
+- /api/cvs/ - CRUD for CV Model
+
 This project uses:
 
 - [**pyenv**](https://github.com/pyenv/pyenv): to manage multiple Python versions
