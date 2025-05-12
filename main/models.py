@@ -5,6 +5,11 @@ class CV(models.Model):
     lastname = models.CharField(max_length=100)
     bio = models.TextField(blank=True)
 
+    # Translations
+    firstname_translated = models.CharField(max_length=100, blank=True)
+    lastname_translated = models.CharField(max_length=100, blank=True)
+    bio_translated = models.TextField(blank=True)
+
     def __str__(self):
         return f"{self.firstname} {self.lastname}"
 
@@ -34,6 +39,10 @@ class Skill(models.Model):
         ("expert", "Expert"),
     ])
 
+    # Translations
+    name_translated = models.CharField(max_length=100, blank=True)
+    level_translated = models.CharField(max_length=50, blank=True)
+
     def __str__(self):
         return f"{self.name} ({self.level})"
 
@@ -43,6 +52,10 @@ class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     link = models.URLField(blank=True)
+
+    # Translations
+    title_translated = models.CharField(max_length=200, blank=True)
+    description_translated = models.TextField(blank=True)
 
     def __str__(self):
         return self.title

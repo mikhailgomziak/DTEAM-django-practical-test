@@ -106,7 +106,11 @@ EMAIL_HOST_USER=youremail@gmail.com
 EMAIL_HOST_PASSWORD=your app password - 16 digits without space
 ```
 
-I left those in .env.example
+## OpenAI Api
+Add your OPENAI_API_KEY to the .env file for the CV translation function to work.
+```bash
+OPENAI_API_KEY=your-openai-api-key-here
+```
 
 # Instructions
 # Version Control System 
