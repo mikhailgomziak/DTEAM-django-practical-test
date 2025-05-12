@@ -88,7 +88,7 @@
                         <p class="card-text">{{ cv.bio_translated }}</p>
 
                         <hr>
-                        <h5>Skills (Translated)</h5>
+                        <h5>Skills</h5>
                         <ul>
                             {% for skill in cv.skills.all %}
                             <li>{{ skill.name_translated }} ({{ skill.level_translated }})</li>
@@ -97,7 +97,7 @@
                             {% endfor %}
                         </ul>
 
-                        <h5>Projects (Translated)</h5>
+                        <h5>Projects</h5>
                         <ul>
                             {% for project in cv.projects.all %}
                             <li>
